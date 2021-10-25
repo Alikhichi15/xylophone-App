@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Center(
           child: Column(
             children: [
+              Text("Please chose a color and number to continue"),
               DropdownButton(
                 hint:
                     Text('Please choose a Color'), // Not necessary for Option 1
