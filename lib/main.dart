@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:xolophone125/views/homeScreen.dart';
+import 'package:xolophone125/views/splashScreen.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  MyHomePage(),
+      home: SplashScreen(),
     );
   }
 }

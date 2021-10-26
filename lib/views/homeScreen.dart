@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:xolophone125/views/soundTile.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -78,6 +79,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                     color: selectedColor,
                                     number: selNo,
                                   )));
+                    } else {
+                      Fluttertoast.showToast(
+                          msg: "Please Chose color and number to continue",
+                          toastLength: Toast.LENGTH_SHORT,
+                          gravity: ToastGravity.BOTTOM,
+                          timeInSecForIosWeb: 1,
+                          backgroundColor: Colors.black,
+                          textColor: Colors.white,
+                          fontSize: 16.0);
                     }
                   },
                   child: Text("Continue"))
