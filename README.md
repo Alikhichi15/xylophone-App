@@ -1,4 +1,4 @@
-# xolophone125
+# xolophone App
 
 A new Flutter project.
 
